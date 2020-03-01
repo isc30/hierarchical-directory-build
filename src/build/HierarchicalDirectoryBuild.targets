@@ -1,0 +1,11 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <DirectoryBuildTargets>$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MsBuildProjectDirectory)'))</DirectoryBuildTargets>
+    </PropertyGroup>
+
+    <Import
+        Project="$(DirectoryBuildTargets)"
+        Condition="Exists($(DirectoryBuildTargets))" />
+
+</Project>

@@ -1,0 +1,5 @@
+<Project InitialTargets="asda" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="asda">
+        <Message Importance="high" Text="Imported: $(MSBuildThisFileFullPath)"/>
+    </Target>
+</Project>
